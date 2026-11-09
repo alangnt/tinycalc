@@ -10,6 +10,14 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 dependencies = []
+authors = [{ name = "Alan Geirnaert" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/<you>/tinycalc"
 
 [project.optional.dependencies]
 dev = ["pytest"]
