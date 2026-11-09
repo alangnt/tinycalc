@@ -12,3 +12,8 @@
 - `[project]` is the metadata. Only `name` and `version` are strictly required
 - `dependencies` lists what users need installed. It's empty because the library only uses plain Python
 - `[optional.dependencies.dev]` lists what only us need, such as pytest. Install it with `pip install -e ".[dev]"`
+
+## How does `__init__.py` work?
+
+- `from .operations import ...` lets users write `from tinycalc import add` instead of `from tinycalc.operations import add`
+- `__all__` lists the name the package supports
