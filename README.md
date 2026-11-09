@@ -20,7 +20,23 @@
 
 ## Build the package
 
-```Python
+```Shell
 pip install build
 python -m build
 ```
+
+## Prepare to be published
+
+```Shell
+pip install twine
+twine check dist/
+```
+
+Quick note: if already built before installing twine, run the following before checking dist/
+
+```Shell
+rm -rf dist
+python -m build
+```
+
+You want `PASSED` for both files
