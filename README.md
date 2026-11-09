@@ -17,3 +17,10 @@
 
 - `from .operations import ...` lets users write `from tinycalc import add` instead of `from tinycalc.operations import add`
 - `__all__` lists the name the package supports
+
+## Build the package
+
+```Python
+pip install build
+python -m build
+```
