@@ -32,7 +32,7 @@ pip install twine
 twine check dist/
 ```
 
-Quick note: if already built before installing twine, run the following before checking dist/
+### Quick note: if already built before installing twine, run the following before checking dist/
 
 ```Shell
 rm -rf dist
@@ -40,3 +40,15 @@ python -m build
 ```
 
 You want `PASSED` for both files
+
+## Publish to TestPyPI
+
+```Shell
+twine upload --repository testpypi dist/*
+```
+
+## Publish to PyPI once TestPyPI works perfectly
+
+```Shell
+twine upload dist/*
+```
