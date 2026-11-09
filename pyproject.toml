@@ -17,7 +17,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/<you>/tinycalc"
+Homepage = "https://github.com/alangnt/tinycalc"
 
 [project.optional.dependencies]
 dev = ["pytest"]
